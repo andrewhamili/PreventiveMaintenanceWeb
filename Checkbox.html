@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<input type="checkbox" id="CondemnBox" onclick="EnableTextbox('CondemnBox', 'CondemnedDate')"/>
+<input type="text" id="CondemnedDate"/>
+
+	<script language="javascript">
+	document.getElementById("CondemnedDate").disabled = true;
+
+	
+	function EnableTextbox(ObjChkId,ObjTxtId)
+	{
+
+    if(document.getElementById(ObjChkId).checked)
+        document.getElementById(ObjTxtId).disabled = false;
+    else
+        document.getElementById(ObjTxtId).disabled = true;
+	}
+    </script>
+
+</body>
+</html>
